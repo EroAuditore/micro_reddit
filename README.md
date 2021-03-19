@@ -18,28 +18,43 @@ Model included:
 - comment
 - post
 
+### Requirements
+- 1. Ruby (~v2.6.3 or more recent) installed in your machine.
+- 2. Rails
+
 ### Setup
 
-- Install [git](https://git-scm.com/downloads)
-- Open Terminal
-- Change directory to folder to download repository
-- Use `cd <file-path>`
-- Run `git clone https://github.com/EroAuditore/micro_reddit.git`
-- Install [Ruby](https://ruby-doc.org/downloads/)
-- Run `ruby console`
+* To clone this repository, open your Terminal and execute the following command:
+```
+git clone https://github.com/EroAuditore/micro_reddit.git
+```
 
-How ot use it
+### Run
+* Change into the folder
+```
+cd micro_reddit
+```
+* Install gems
+```
+bundle install
+```
+* Run Database migrations
+```
+rails db:migrate
+```
 
-> To start testing the models created type on Rails console:
+### How to use it
+
+* Run Rails console
+```
+rails console
+```
+
+> To start testing the models, execute the following commands from the Rails console:
 
 - User.all
 - Post.all
 - Comments.all
-
-## Dependencies
-
-- To install all the dependecies needed
-  - Run `bundle install`
 
 ## Authors
 
